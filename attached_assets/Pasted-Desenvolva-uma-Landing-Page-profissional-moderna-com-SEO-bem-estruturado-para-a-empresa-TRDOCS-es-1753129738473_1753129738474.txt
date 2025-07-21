@@ -1,0 +1,164 @@
+Desenvolva uma Landing Page profissional, moderna, com SEO bem estruturado para a empresa TRDOCS, especializada em guarda de documentos, digitalização, gestão documental, BPO e sistema GED.
+
+O site deve destacar os diferenciais da empresa, oferecer boa navegabilidade, conversão (solicitação de orçamento), e posicionamento orgânico. A TRDOCS atua em armazenamento físico de documentos com alta segurança, digitalização com acesso remoto, e gestão inteligente com software próprio.
+
+🏷️ Informações base:
+Nome da empresa: TRDOCS
+Domínio: https://trdocs.com.br
+Segmento: Digitalização e Guarda de Documentos
+Slogan sugerido: Protegendo seu passado, digitalizando seu presente, organizando seu futuro.
+
+🧭 Estrutura da Landing Page
+✅ Hero com Carrossel de Destaques
+Slides com os principais serviços, cada um contendo:
+
+Título + Subtítulo
+
+Texto descritivo
+
+Botões: “Mais Detalhes” / “Solicitar Orçamento”
+
+Slides:
+
+Guarda de Documentos
+"Alta capacidade de armazenamento e segurança em condomínio fechado."
+
+Digitalização de Documentos
+"Tenha acesso remoto, seguro e rápido aos seus arquivos."
+
+Gestão Documental
+"Controle de temporalidade, digitalização, classificação e guarda."
+
+TRDOCS System (Sistema GED)
+"O melhor software para Gerenciamento Eletrônico de Documentos."
+
+🔧 Seções da Página
+🛠️ Serviços
+Cards ou blocos para:
+
+Guarda de Documentos
+
+Digitalização de Documentos
+
+Gestão Documental
+
+BPO (Terceirização)
+
+Sistema GED (TRDOCS SYSTEM)
+
+Cada bloco com:
+
+Ícone/Imagem representativa
+
+Breve explicação
+
+Botão: "Saiba Mais"
+
+🧬 Diferenciais da TRDOCS
+Blocos com ícones:
+
+Condições especiais para empresas
+
+Condomínio fechado 24h com segurança
+
+Rastreabilidade de documentos
+
+Equipe especializada
+
+Custo-benefício comprovado
+
+Atuação nacional
+
+🧠 Ferramentas Úteis (Diferencial)
+Inclua uma seção funcional com:
+
+Calculadora de espaço físico estimado (com base no nº de caixas ou pastas)
+
+Checklist para Gestão Documental (download de PDF gratuito)
+
+Mini FAQ com dúvidas comuns (por ex: "O que é GED?", "Como funciona a digitalização?")
+
+Manual rápido de documentos empresariais obrigatórios (por setor)
+
+🧑‍💼 Quem Somos
+História da empresa
+
+Missão, Visão, Valores
+
+Equipe técnica (opcional)
+
+Certificações ou normas atendidas (ex: ISO, LGPD, etc.)
+
+📍 Localização
+Mapa Google Maps (com botão "Como chegar")
+
+Endereço completo:
+Estrada Caucaia do Alto, 5311 - Condomínio...
+
+📞 Contato
+Formulário com nome, e-mail, telefone, assunto, mensagem
+
+Botão de WhatsApp flutuante
+
+CTA para solicitar orçamento
+
+Número e horário de atendimento
+
+📈 SEO e Otimização (importante!)
+Meta tags e estrutura para SEO:
+
+Título: "TRDOCS - Guarda e Digitalização de Documentos | Gestão Documental com Segurança"
+
+Meta description: "A TRDOCS é referência em guarda, digitalização e gestão de documentos físicos e digitais. Condomínio fechado, segurança máxima e sistema GED próprio."
+
+URLs amigáveis (ex: /guarda-documentos, /digitalizacao-documentos)
+
+Imagens otimizadas com alt-text descritivo
+
+Rich Snippets para serviços
+
+Sitemap.xml e robots.txt configurados
+
+Palavras-chave alvo para SEO:
+
+guarda de documentos
+
+digitalização de documentos
+
+gestão documental
+
+GED
+
+terceirização de processos documentais
+
+empresa de digitalização em SP
+
+TRDOCS
+
+⚙️ Funcionalidades Extras (sugeridas)
+Área do cliente (opcional para roadmap futuro)
+
+Integração com CRM via formulário
+
+Blog (opcional): para ranquear artigos com temas como "Importância da gestão documental", "Digitalização na LGPD", "Diferença entre GED e ECM"
+
+Sistema multilíngue (pt/en) (se atender clientes internacionais)
+
+🎨 Tecnologias sugeridas
+Frontend: Next.js + TailwindCSS (foco em performance e SEO)
+
+Backend (opcional para ferramentas/calculadoras): Node.js ou Python (FastAPI)
+
+CMS (opcional para conteúdos): Strapi ou Sanity
+
+Hospedagem: Vercel
+
+🧾 Conversão e Performance
+Páginas ultra rápidas (Google Lighthouse 90+)
+
+Call-to-actions constantes, mas discretos
+
+Otimizado para dispositivos móveis
+
+Captura de leads com formulários + opção de download de materiais úteis
+
