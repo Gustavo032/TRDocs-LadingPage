@@ -42,7 +42,6 @@ export default function Home() {
       <HeroCarousel />
       <ServicesSection />
       <DifferentialsSection />
-      <InteractiveTools />
       <AdvancedTools />
       <TestimonialsSection />
       <CaseStudiesSection />

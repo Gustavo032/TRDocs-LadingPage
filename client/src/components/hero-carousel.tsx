@@ -64,71 +64,76 @@ export default function HeroCarousel() {
       <div className="absolute inset-0 bg-black opacity-20"></div>
       
       <div className="relative min-h-[600px] flex items-center">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 flex items-center transition-opacity duration-500 ${
-              index === currentSlide ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
-            <div 
-              className="absolute inset-0 bg-cover bg-center"
-              style={{
-                backgroundImage: `linear-gradient(rgba(30, 64, 175, 0.8), rgba(30, 64, 175, 0.8)), url('${slide.image}')`
-              }}
-            />
-            <div className="container mx-auto px-4 relative z-10">
-              <div className="max-w-2xl">
-                <h2 className="text-5xl font-bold mb-4">{slide.title}</h2>
-                <h3 className="text-xl mb-6 text-blue-100">{slide.subtitle}</h3>
-                <p className="text-lg mb-8 leading-relaxed">{slide.description}</p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button 
-                    size="lg"
-                    className="bg-accent text-white hover:bg-yellow-600"
-                  >
-                    Mais Detalhes
-                  </Button>
-                  <Button 
-                    size="lg"
-                    variant="outline" 
-                    className="border-2 border-white text-white hover:bg-white hover:text-primary"
-                    onClick={scrollToContact}
-                  >
-                    Solicitar Orçamento
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
+		{slides.map((slide, index) => (
+			<div
+				key={index}
+				className={`absolute inset-0 flex items-center transition-opacity duration-500 ${
+				index === currentSlide ? 'opacity-100' : 'opacity-0'
+				}`}
+			>
+				{/* <- Imagem de fundo agora com pointer-events-none para não bloquear cliques */}
+				<div 
+				className="absolute inset-0 bg-cover bg-center pointer-events-none"
+				style={{
+					backgroundImage: `linear-gradient(rgba(30, 64, 175, 0.8), rgba(30, 64, 175, 0.8)), url('${slide.image}')`
+				}}
+				/>
+				{/* <- Conteúdo com z-10 */}
+				{/* <div className="container mx-auto px-4 pb-24 relative z-10"> */}
+				<div className="container mx-auto px-4 sm:px-20 relative z-10">
+				<div className="max-w-2xl">
+					<h2 className="text-5xl font-bold mb-4">{slide.title}</h2>
+					<h3 className="text-xl mb-6 text-blue-100">{slide.subtitle}</h3>
+					<p className="text-lg mb-8 leading-relaxed">{slide.description}</p>
+					<div className="flex flex-col sm:flex-row gap-4">
+					<Button 
+						size="lg"
+						className="bg-accent text-white hover:bg-yellow-600"
+					>
+						Mais Detalhes
+					</Button>
+					<Button 
+						size="lg"
+						variant="outline" 
+						className="border-2 border-white text-black hover:bg-white hover:text-primary"
+						onClick={scrollToContact}
+					>
+						Solicitar Orçamento
+					</Button>
+					</div>
+				</div>
+				</div>
+			</div>
+		))}
+
 
         {/* Navigation */}
         <button 
-          onClick={prevSlide}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full transition-all"
-        >
-          <ChevronLeft className="h-6 w-6" />
-        </button>
-        <button 
-          onClick={nextSlide}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full transition-all"
-        >
-          <ChevronRight className="h-6 w-6" />
-        </button>
+			onClick={prevSlide}
+			className="absolute z-20 left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full transition-all"
+		>
+		<ChevronLeft className="h-6 w-6" />
+		</button>
+
+		<button 
+		onClick={nextSlide}
+		className="absolute z-20 right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full transition-all"
+		>
+			<ChevronRight className="h-6 w-6" />
+		</button>
 
         {/* Dots */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
-          {slides.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => goToSlide(index)}
-              className={`w-3 h-3 bg-white rounded-full transition-opacity ${
-                index === currentSlide ? 'opacity-100' : 'opacity-50'
-              }`}
-            />
-          ))}
-        </div>
+       <div className="absolute z-20 bottom-16 left-1/2 transform -translate-x-1/2 flex space-x-2">
+			{slides.map((_, index) => (
+				<button
+				key={index}
+				onClick={() => goToSlide(index)}
+				className={`w-3 h-3 bg-white rounded-full transition-opacity ${
+					index === currentSlide ? 'opacity-100' : 'opacity-50'
+				}`}
+				/>
+			))}
+		</div>
       </div>
 
       {/* Trust Badge */}
